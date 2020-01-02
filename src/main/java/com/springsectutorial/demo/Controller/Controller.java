@@ -5,18 +5,23 @@ import org.springframework.web.bind.annotation.GetMapping;
 @org.springframework.stereotype.Controller
 public class Controller {
 
-  @GetMapping("/admin-index")
-  public String adminIndex(){
-    return "adminindex";
+  @GetMapping("/free/index")
+  public String anybodyIndex(){
+    return "freeindex";
   }
 
-  @GetMapping("/user-index")
+  @GetMapping("/user/index")
   public String userIndex(){
     return "userindex";
   }
 
-  @GetMapping("/teacher-index")
+  @GetMapping("/teacher/index")
   public String teacherIndex(){
     return "teacherindex";
+  }
+
+  @GetMapping("/admin/index")
+  public String adminIndex(){
+    return "adminindex";
   }
 }
